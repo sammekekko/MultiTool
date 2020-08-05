@@ -1,0 +1,10 @@
+name: MultiTool
+version: 1.0.0
+author: NeurionG
+description: MultiTool Plugin!
+main: me.neuriong.multitool.MultiTool
+depends: [Vault]
+
+commands:
+  multitool:
+    aliases: [mt]

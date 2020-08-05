@@ -1,0 +1,91 @@
+toolname: "&c&lMulti &f&lTool"
+lores: # Enchantments are automatically added! Also, if you change it, all the people that currently have the multitool, won't be able to use their version of it
+- "&b&nMulti Tool"
+- "" # leave space for enchantments
+permission_give: "multitool.give"
+permission_upgrade: "multitool.upgrade"
+upgrade_menu_enabled: true
+
+no_permission_message: "&c&lYou don't have permission to run this command!"
+console_error_message: "&c&lThe console is unable to run this command!"
+
+invalid_arguments_message: "&c&lInvalid arguments were entered!"
+no_item_message: "&c&lYou need to have a Multi Tool equipped to run this command!"
+inventory_full_message: "&c&lThe player has a full inventory!"
+player_invalid_message: "&c&l'<player>'&c&l is not online!" # TODO make so that when the player joins they get their multitool
+give_message: "&a&lYou have given <player>&a&l a multitool!"
+
+no_money_name: "&c&lNot Enough Money!"
+max_level_name: "&c&lMax Level!"
+already_repaired_name: "&c&lAlready Fully Repaired"
+
+harvesting_chance: 10 # / 100
+harvesting_double_chance: 25 # / 100 : Only for harvesting level 2+
+
+close_inventory_on_fix: true
+
+gui:
+  title: "&a&lUpgrade Menu"
+  size: 27
+  fortune:
+    lores: # Variables (<level> = fortune level, <price> = the cost of the upgrade(Do not remove the variable!!) you can change the place of it if u want to)
+      - "&7Left Click to add a fortune"
+      - "&7level for your multitool!"
+      - ""
+      - "&7Price: &6&l<price>"
+      - ""
+      - "&7Current Level:"
+      - "&b&l<level>"
+    name: "&a&lAdd Fortune" # Do not have the same name for any item
+    slot: 29
+    cost: 1700 # this will get multiplied by the number of levels of the item
+  efficiency:
+    lores: # Variables (<level> = efficiency level, <price> = the cost of the upgrade(Do not remove the variable!!) you can change the place of it if u want to)
+      - "&7Left Click to add an efficiency"
+      - "&7level for your multitool!"
+      - ""
+      - "&7Price: &6&l<price>"
+      - ""
+      - "&7Current Level:"
+      - "&b&l<level>"
+    name: "&a&lAdd Efficiency" # Do not have the same name for any item
+    slot: 31
+    cost: 1500 # this will get multiplied by the number of levels of the item
+  unbreaking:
+    lores: # Variables (<level> = unbreaking level, <price> = the cost of the upgrade(Do not remove the variable!!) you can change the place of it if u want to)
+      - "&7Left Click to add an unbreaking"
+      - "&7level for your multitool!"
+      - ""
+      - "&7Price: &6&l<price>"
+      - ""
+      - "&7Current Level:"
+      - "&b&l<level>"
+    name: "&a&lAdd Unbreaking" # Do not have the same name for any item
+    slot: 33
+    cost: 1200 # this will get multiplied by the number of levels of the item
+  haste:
+    lores: # Variables (<level> = efficiency level, <price> = the cost of the upgrade(Do not remove the variable!!) you can change the place of it if u want to)
+      - "&7Left Click to add a haste"
+      - "&7level for your multitool!"
+      - ""
+      - "&7Price: &6&l<price>"
+      - ""
+      - "&7Current Level:"
+      - "&b&l<level>"
+    name: "&a&lAdd Haste" # Do not have the same name for any item
+    slot: 31
+    cost: 1600 # this will get multiplied by the number of levels of the item
+  repair:
+    lores: # Variables (<price> = the cost of the repair(Do not remove the variable!!) you can change the place of it if u want to)
+      - "&7Left Click to repair"
+      - "&7your multitool!"
+      - ""
+      - "&7Price: &6&l<price>"
+    name: "&a&lRepair" # Do not have the same name for any item
+    slot: 31
+    cost: 5500
+  exit:
+    lores:
+      - "&7Left Click to exit"
+      - "&7this menu"
+    name: "&c&lExit"
